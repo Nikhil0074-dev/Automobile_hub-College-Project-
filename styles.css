@@ -1,0 +1,429 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+    margin: auto;
+    padding: auto;
+    font-family: Arial, sans-serif;
+    background: white;
+    color:black;
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+header {
+   margin:10px 10px;
+    background: black;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:fixed;
+    width: 97%;
+    height:fit-content;
+    top: 10;
+    z-index: 1000;
+}
+.site-title {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: dashed;
+    flex-grow: 1;
+}
+.login-icon {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    margin-right: auto;
+    background:#f39c12;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 30px;
+    height: 30px;
+}
+nav {
+    margin-left: auto;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    justify-content: flex-end;
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    text-decoration:none;
+}
+nav ul li button {
+    background-color: #f39c12;
+    border:2px;
+    color: white;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor:pointer;
+ 
+}
+nav ul li button:hover {
+    background-color:#ffc267;
+    font-size:20px ;
+}
+section {
+    padding: 100px 20px;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+}
+.home h2{
+  font-size: 50px;
+  font-style: italic;
+  text-shadow: #f39c12;
+  color:white;   
+  padding-top:400px;
+
+}
+
+.explore-btn{
+   background:#f39c19;
+   color:white;
+   font-size:40px;
+   font-weight: bold;
+   border:5px;
+   border-color: black;
+   border-radius: 5px;
+
+}
+
+.explore-btn:hover{
+  background: #946212;
+  font-size:45px;
+
+}
+.about {
+display: flex;
+justify-content: center;
+padding: 40px 10%;
+}
+
+.about .content {
+background: #f39c12;
+padding: 20px;
+border-radius: 10px;
+color: #fff;
+max-width: 600px;
+height: 450px; /* Adjusted height to keep it compact */
+text-align: center;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+overflow: hidden; /* Prevents overflow */
+}
+
+.about .content img {
+width: 100%;
+max-width: 100%;
+height: 200px; /* Fixed height for image */
+object-fit: cover; /* Ensures image fits neatly */
+border-radius: 10px;
+margin-bottom: 10px;
+}
+
+.about .content h3 {
+font-size: 22px;
+margin-bottom: 10px;
+}
+
+.about .content p {
+font-size: 16px;
+line-height: 22px;
+}
+h2 {
+ font-weight:bold;
+  font-size:45px;
+}
+.slider {
+position: relative;
+max-width: 50%; /* Decrease the width of the slider */
+margin: auto;
+overflow: hidden;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+background:white;
+}
+.slides {
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
+.slide {
+min-width: 100%; /* Ensure each slide takes full width */
+box-sizing: border-box; /* Include padding and border in width */
+}
+.slide-content {
+display: flex;
+flex-direction: column; /* Stack image and info vertically */
+align-items: center; /* Center align items */
+text-align: center; /* Center text */
+background: white; /* Background color for the entire block */
+border-radius: 10px; /* Rounded corners for the block */
+padding: 10px; /* Padding around the content */
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+.slide img {
+width: 100%; /* Make image responsive */
+height: auto; /* Maintain aspect ratio */
+max-height: 300px; /* Increase the max height for the image */
+border-radius: 10px; /* Rounded corners */
+object-fit: contain; /* Ensure the entire image is visible */
+}
+.info {
+padding: 15px; /* Add some padding around the info */
+background-color: #f39c12; /* Set the background color for the info section */
+border-radius: 10px; /* Rounded corners for the info box */
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+width: 100%; /* Ensure it takes the full width of the slide */
+}
+.prev, .next {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background: rgba(0, 0, 0, 0.5);
+color: white;
+border: none;
+cursor: pointer;
+padding: 12px 18px;
+border-radius: 50%;
+font-size: 20px;
+transition: 0.3s;
+}
+.prev:hover, .next:hover {
+background: rgba(0, 0, 0, 0.8);
+}
+.prev { left: 12px; }
+.next { right: 12px; }
+#services h2{
+font-weight:bold;
+font-size:45px;
+}
+.services-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 50px;
+margin-top: 30px;
+}
+.service-item {
+background:#ffc937;
+padding: 20px;
+border-radius: 10px;
+width: 250px;
+text-align: center;
+}
+
+.service-item i {
+font-size: 70px;
+color:white;
+margin-bottom: 10px;
+}
+
+.service-item button {
+font-size: 30px;
+font-weight: bolder;
+background-color: #f39c12;
+border-radius: 5px;
+border:none;
+color:white;
+margin-bottom: 10px;
+}
+
+.service-item:hover{
+background-color: #f3eb55;
+
+}
+
+.service-item button:hover{
+
+background-color: #ffc267;
+
+}
+
+
+.faq-container {
+max-width: 800px;
+margin: 50px auto;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.faq-item {
+margin-bottom: 10px;
+}
+
+.faq-question {
+width: 100%;
+padding: 15px;
+background-color: #f39c12;
+color: white;
+text-align: left;
+font-size: 20px;
+border: none;
+cursor: pointer;
+border-radius: 4px;
+}
+
+.faq-question:hover {
+background-color: #ffc937;
+}
+
+.faq-answer {
+display: none;
+padding: 15px;
+background-color: #ffc267;
+border-radius: 4px;
+margin-top: 5px;
+}
+
+.faq-answer p {
+font-size: 1em;
+color:white;
+}
+#contact h2{
+  font-weight:bold;
+  font-size:45px;
+}
+
+.container {
+max-width: 1200px;
+margin: 50px auto;
+padding: 20px;
+background-color: white;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+display: flex;
+justify-content: space-between;
+margin-bottom: 30px;
+}
+
+.contact-info div {
+flex: 1;
+margin: 10px;
+}
+
+.contact-info h3 {
+font-size: 1.5em;
+margin-bottom: 10px;
+}
+
+.contact-info p {
+font-size: 1.1em;
+margin-bottom: 10px;
+}
+
+.contact-form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.contact-form label {
+font-size: 1.1em;
+margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+width: 100%;
+max-width: 600px;
+padding: 10px;
+margin: 10px 0;
+font-size: 1em;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.contact-form button {
+padding: 10px 20px;
+background-color: #f39c12;
+color: white;
+font-size: 1.1em;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.contact-form button:hover {
+background-color: #f39c19;
+}
+
+.map-container {
+margin-top: 50px;
+height: 400px;
+width: 100%;
+border: 1px solid #ccc;
+border-radius: 8px;
+}
+
+.footer {
+    background: black;
+    padding: 1rem 0.5rem;
+}
+
+.footer .box-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .box-container .box {
+    flex: 1;
+    min-width: 15rem;
+    margin: 0.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1rem;
+    color: whitesmoke;
+    margin-bottom: 0.3rem;
+    text-decoration: none;
+}
+
+.footer .box-container .box a i {
+    color: white;
+    margin-right: 0.3rem;
+}
+
+.footer .box-container .box a:hover i {
+    font-size: 1.2rem;
+}
+
+.footer .credit {
+    text-align: center;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    margin-top: 1rem;
+    border-top: var(--border);
+    font-size: 1.2rem;
+    color:white;
+}   
