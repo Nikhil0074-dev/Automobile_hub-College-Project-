@@ -108,11 +108,4 @@ Automobile_hub/
 - Session-based authentication
 - File upload validation
 
-## License
-
-This is a college project. All rights reserved.
-
-## Author
-
-Developed for educational purposes.
-
+#
